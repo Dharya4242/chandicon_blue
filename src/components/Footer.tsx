@@ -14,7 +14,7 @@ const Footer = () => {
                         <Link href="/" className="inline-block mb-6">
                             <div className="relative h-12 w-48">
                                 <Image
-                                    src="/assets/logos/logo_blue.png"
+                                    src="/assets/logos/Chandicon_final.png"
                                     alt="CHANDICON 2026"
                                     fill
                                     className="object-contain object-left"
