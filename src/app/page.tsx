@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import LogosHeader from "@/components/LogosHeader";
 import Hero from "@/components/Hero";
 import Timeline from "@/components/Timeline";
 import ConferenceDescription from "@/components/ConferenceDescription";
@@ -8,6 +9,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="min-h-screen bg-background flex flex-col">
+      <LogosHeader />
       <Navbar />
       <Hero />
       <ConferenceDescription />

@@ -32,26 +32,32 @@ const Hero = () => {
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-32">
                 <div className={`max-w-3xl transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
-                    {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-white/50 shadow-sm backdrop-blur-md mb-8">
-                        <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
-                        <span className="text-sm font-bold text-gray-800 tracking-wide uppercase">IEEE CHANDICON 2026</span>
+                    {/* Pre-title */}
+                    <div className="inline-flex items-center gap-2 mb-4">
+                        <span className="h-px w-8 bg-primary"></span>
+                        <span className="text-sm md:text-base font-bold text-primary tracking-[0.2em] uppercase leading-none">
+                            IEEE Chandigarh Subsection International Conference
+                        </span>
                     </div>
 
-                    {/* Title */}
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6">
-                        Shaping the <br />
-                        <span className=" bg-clip-text bg-gradient-to-r from-primary to-accent drop-shadow-sm">Future</span> of <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent drop-shadow-sm relative inline-block">
-                            Industrial Intelligence
-                            <svg className="absolute w-full h-3 -bottom-2 left-0 text-accent opacity-40" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00025 6.99997C25.7925 3.37527 80.6276 0.125216 117.439 2.50021C163.455 5.46896 182.046 6.99997 197.681 6.99997" stroke="currentColor" strokeWidth="3"></path></svg>
+                    {/* Main Title */}
+                    <h1 className="text-6xl md:text-8xl font-black text-gray-900 tracking-tight leading-[0.9] mb-8">
+                        CHANDICON <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-accent drop-shadow-sm">
+                            2026
                         </span>
                     </h1>
 
-                    {/* Description */}
-                    <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed mb-10 max-w-2xl drop-shadow-sm">
-                        Join leading experts, researchers, and innovators at the premier IEEE conference. Explore the convergence of AI, IoT, and sustainable technologies in the City Beautiful.
-                    </p>
+                    {/* Theme */}
+                    <div className="relative mb-12 group">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                        <div className="relative px-6 py-4 bg-white/40 backdrop-blur-md rounded-xl border border-white/60 shadow-sm inline-block">
+                            <p className="text-xl md:text-2xl font-semibold text-gray-800 tracking-tight">
+                                <span className="text-primary mr-2 italic font-medium opacity-80">Theme:</span>
+                                Emerging Technologies Shaping Tomorrow
+                            </p>
+                        </div>
+                    </div>
 
                     {/* Info Cards */}
                     <div className="flex flex-col sm:flex-row gap-4 mb-10">
